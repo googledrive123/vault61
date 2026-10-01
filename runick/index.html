@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+<script src="/js/mimicry.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Runick</title>
+  </head>
+  <body style="margin: 0px">
+    <canvas id="unity-canvas" width=640 height=480 style="width: 640px; height: 480px; background: #000000"></canvas>
+    <script src="Build/Runick.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Runick.data",
+        frameworkUrl: "Build/Runick.framework.js",
+        codeUrl: "Build/Runick.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Black Trumpet Games",
+        productName: "Runick",
+        productVersion: "1.0.6",
+      });
+    </script>
+  </body>
+</html>
